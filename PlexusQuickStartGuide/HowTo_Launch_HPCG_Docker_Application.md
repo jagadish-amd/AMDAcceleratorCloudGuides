@@ -64,6 +64,6 @@
     ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/4f113aa6-f7ba-4c26-b62e-c3c22df8b552)
 
 
-11. The final score in the STDOUT tab is the performance of RocHPCG application.**
+11. The final score in the STDOUT tab is the performance of RocHPCG application.
     
     ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/01b04c4f-c514-41b1-8028-e7ae476e6b3d)
