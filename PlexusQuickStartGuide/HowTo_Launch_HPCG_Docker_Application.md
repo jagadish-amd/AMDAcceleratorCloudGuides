@@ -9,7 +9,7 @@
     ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/d62dc96e-e37a-42b3-9b0e-72445014a621)
 
 
-2. Click on Applications. Select **HPCG**.
+2. Click on **Applications**. Select **HPCG**.
 
     ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/5d521fdb-046e-4963-9068-db42f71a59c9)
 
