@@ -124,16 +124,20 @@ Only Service type applications (where the Is service option has been selected) c
 Review the application details and making any edits or corrections needed.Click **CREATE** to execute the creation procedure.
 
 **Important notes**  
-**a.** The cluster user directory will be mounted in the /home/aac folder. It will be selected as working directory in the container.
+**a.** The cluster user directory will be mounted in the /home/aac folder. It will be selected as working directory in the container.  
 **b.** Prerun script application
 - The prerun script is used to execute common scripts for all the containers in the application. It is mainly used to move data to the right folders inside the home user workspace.
 - The prerun script can be configured in the default prerun script application setting or it can be written in the job prerun step.
+
 **c.** Container must have different names when used in the same application.
 - Containers configured in the application require different names.
 - Several instances of the same container can be configured in the same application, but each container must have a different name, to be used inside the application.
+
 **d.** Multiple container applications are just available in Kubernetes
+
 **e.** The container run script must be set
 - The run script can be either a custom script or the default entry point of the container.
+
 **f.** Get the default container entrypoint
 - You can get default container entry point by using the following command:
   - docker inspect --format="{{.Config.Entrypoint}}{{.Config.Cmd}}{{.Config.WorkingDir}}" redis
