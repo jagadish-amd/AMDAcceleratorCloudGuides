@@ -37,15 +37,13 @@ In the general information panel, configure the general application attributes, 
 - **Price per GPU usage**: Price charged to the user per GPU usage.  
 **Stateful Sets**
 Stateful sets are useful when you need to keep a predictable hostname list for multi-POD jobs, as in the following example:  
-- some_hostname_prefix_0 is the hostname of the 1st replica.  
-- some_hostname_prefix_1 is the hostname of the 2nd replica.  
-- some_hostname_prefix_2 is the hostname of the 3rd replica.
-
+  - some_hostname_prefix_0 is the hostname of the 1st replica.  
+  - some_hostname_prefix_1 is the hostname of the 2nd replica.  
+  - some_hostname_prefix_2 is the hostname of the 3rd replica.
 With stateful sets, the same hostname is kept between a POD failure / restart. This is useful for MPI jobs, or jobs where you need PODs to register to a centralized server e.g. Spark and NiFi. Since the hostnames follow a predictable pattern, you always keep the same fixed host list for your job, even after a POD failure / restart.  
 
 **Repository authentication**  
 In the case your application uses containers that are stored in a private image repository, you will need to setup the following authentication fields:
-
 - **User**: user of the docker image repository account.  
 - **Password**: the password of the docker image repository account. It can be also the security token provided by some repositories such as NVidia.  
 - **Server**: the docker repository server URL. This is the URL for Docker hub: https://index.docker.io/v1/
@@ -119,10 +117,10 @@ Set the following parameters to configure the application:
 ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475255/f1048c88-9ec9-421a-beda-0865fbcbcafb)
 After filling in the container parameters, click **Save** to save the container configuration, and then click **NEXT**.
 
-**9** Multiple containers on an application
+**9.** Multiple containers on an application
 Only Service type applications (where the Is service option has been selected) can support multiple containers, therefore the interface will only allow you to add a single container to those applications where the **Is service** option has not been selected. In the case of services, several instances of the same container can be configured in the same application, but each container must have a different name, to be used inside the application.
 
-**10** Review the application and create it
+**10.** Review the application and create it
 Review the application details and making any edits or corrections needed.Click **CREATE** to execute the creation procedure.
 
 **Important notes**  
@@ -174,20 +172,19 @@ Review the application details and making any edits or corrections needed.Click 
 **Containers depending on other containers**
 In the case where your application has container dependencies, you can use the order attribute shown in Figure 7.
 
-**Memory requirements**
+**Memory requirements**  
 In case you run into memory troubles, you can configure memory container requirements in Figure 7.Memory is configured in Megabytes.
 
-**Container needs the public IP of another container**  
+**Container needs the public IP of another container**    
 In this case, you will need to deploy two different applications:  
 -  Configure the backend application with its containers and expose the required endpoint.
 -  Configure the frontend application with the IP and endpoint provided by the backend application.
 
-**Interactive workloads or services finish immediately**  
+**Interactive workloads or services finish immediately**   
 If you want to keep alive any execution, the container run script must be a live process. In case the run script executes a detached process, you can keep the container alive by adding && tail -f, otherwise the execution manager will finish the application.
 
-**Kubernetes Manager pods fail**
+**Kubernetes Manager pods fail**  
 The manager pods are those called stream-copy, create-scripts, read-analytics, retrieve-files, read-stdout or read-stderr. In case they fail, these are the most likely reasons:
-
 -  Fail without displaying a reason or displaying any http error:
 -  This error is because there is an issue with the target cluster.
 -  Show timeout error of 60 seconds.
