@@ -41,6 +41,13 @@ mpirun --mca pml ucx -np 8 rochpcg 336 168 672 1860
 
  **7. Select the allowed run time. The number of GPUs should be 8. Here, we have selected the run time as 1 hour, number of GPU’s as 8 and telemetry is enabled.
     Click on Next button.**
+    
+   **Note:** The time for which workload is allowed to run should be specified in the Maximum allowed runtime field. By default 1 hour will be selected.
+
+    If maximum allowed run time is 1 hour, it implies, workload will run for 1 hour and then it will be automatically stopped after 1 hour as it will not be allowed to exceed Maximum allowed runtime.
+
+    Based on the time required for workload, user should change the Maximum allowed runtime. Once workload is launched, user cannot change the total workload time. It has to be configured in the current step.
+    
 
 ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/0605bc6f-7136-4b7b-9d79-3faf33a444d0)
    
@@ -66,4 +73,5 @@ mpirun --mca pml ucx -np 8 rochpcg 336 168 672 1860
 
 
  **11. The final score in the STDOUT tab is the performance of RocHPCG application.**
+ 
   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/01b04c4f-c514-41b1-8028-e7ae476e6b3d)

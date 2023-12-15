@@ -138,7 +138,9 @@ Required inputs for workload like number of GPUs, maximum allowed run time, etc 
 &emsp; d. **Scheduled**
 
 &emsp; &emsp; Scheduling a job is optional. This step can be skipped if you are trying to run the job immediately.
+
 &emsp; &emsp; **Scheduled** field can be used to schedule the job for desired date and time which can be made reccuring daily or weekly.
+
 &emsp; &emsp; To schedule a job, Click the below toggle button
 
 &emsp; &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/5ce78a5a-dc51-4b31-ab8f-ccccaf3a997d)
@@ -190,7 +192,7 @@ Click on **Change** button of any of the sections in order to change the configu
  
 Click **RUN WORKLOAD**
 
-The workload will start running once the node is available. Please refer [HowTo_Monitor_Workloads](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/blob/naimisha/PlexusQuickStartGuide/HowTo_Monitor_Workload.md) to understand the workload status.
+The workload will start running once the node is available. Please refer [HowTo_Monitor_Workloads](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/blob/main/PlexusQuickStartGuide/HowTo_Monitor_Workload.md) to understand the workload status.
 
 
 Once the application execution is successful then the status gets changed to **'Completed'**

@@ -37,6 +37,14 @@
     Click on Next button.**
 
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/c0b45582-c5ac-4b8f-88b9-ab234afba7af)
+   
+&emsp; The time for which workload is allowed to run should be specified in the **Maximum allowed runtime** field. By default 1 hour will be selected.
+
+&emsp; If maximum allowed run time is 1 hour, it implies, workload will run for 1 hour and then it will be automatically stopped after 1 hour as it will not be allowed to exceed **Maximum allowed runtime**.
+
+&emsp; Based on the time required for workload, user should change the **Maximum allowed runtime**.
+
+&emsp; Once the workload is launched, user cannot change the total workload time. It has to be configured in this step.
 
  **8. Select the cluster and desired queue to run the job. In this case 1CN96C8G1H_4IB_MI250_Ubuntu22 was selected. Click on Next.**
 
