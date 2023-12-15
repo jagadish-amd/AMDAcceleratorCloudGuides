@@ -41,6 +41,12 @@ mpirun --mca pml ucx -np 8 hpcg 280 280 280 1860
 
  **7. Select the allowed run time. The number of GPUs should be 8. Here, we have selected the run time as 1 hour, number of GPU’s as 8 and telemetry is enabled.
     Click on Next button.**
+        
+   **Note:** The time for which workload is allowed to run should be specified in the Maximum allowed runtime field. By default 1 hour will be selected.
+
+    If maximum allowed run time is 1 hour, it implies, workload will run for 1 hour and then it will be automatically stopped after 1 hour as it will not be allowed to exceed Maximum allowed runtime.
+
+    Based on the time required for workload, user should change the Maximum allowed runtime. Once workload is launched, user cannot change the total workload time. It has to be configured in the current step.
 
 ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/edcfdb15-1925-4c44-a7a2-cd8280be1fd4)
 
