@@ -82,8 +82,30 @@ Once the required number of nodes are freed, the workload will start running.
 Performance tab will be visible only if **Telemetry enabled** option is enabled in **Select Resources** step while launching workload.
 ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/3eb62866-640c-4f6c-8a9c-ca0a8757ae3d)
 
-Please refer **Select Resources** step in [HowTo_Run_Workload](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/blob/main/PlexusQuickStartGuide/HowTo_Run_Workload.md) guidde.
+Please refer **Select Resources** step in [HowTo_Run_Workload](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/blob/main/PlexusQuickStartGuide/HowTo_Run_Workload.md) guide.
 
 ### Why can't I see App Config/ Application Configuration step while launching workload
 
 Interactive applications like pyTorch, Tensorflow, Jammy, etc will not have Application Configuration step. Hence, you will not see the step.
+
+### How to SSH into container for Jammy/Ubuntu applications?
+
+Launch a Jammy application. Once interactive endpoints are available in workload overview page, Navigate to **STDOUT** and copy username and password.
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/a018e9b4-aa69-4520-8f7e-b047f00abcf6)
+
+Click **Connect**. Use the ssh url provided. Replace \<USER> with the username copied from STDOUT tab and enter password when prompted in any terminal/SSH client(like putty, mobaxterm etc).
+
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/7d520e5e-123e-4d9f-a941-0cc6afd339eb)
+
+Please refer [How_To_Launch_Jammy(SSH)_Application](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/blob/main/PlexusQuickStartGuide/How_To_Launch_Jammy(SSH)_Application.md) for detailed steps.
+
+
+### How to connect JupyterLab for AI/ML applications like pytorch, tensorflow etc?
+
+Launch a pytorch application. Once interactive endpoints are available, Click **Connect**
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/cac47a19-d778-47c2-953c-df444beef3d5)
+
+Copy the token from **STDOUT** tab and use it to connect.
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/b76d78c4-5089-404c-b189-675bae7a76c4)
+
+Please refer [HowTo_Launch_Pytorch_Application](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/blob/main/PlexusQuickStartGuide/HowTo_Launch_Pytorch_Application.md) for detailed steps.
