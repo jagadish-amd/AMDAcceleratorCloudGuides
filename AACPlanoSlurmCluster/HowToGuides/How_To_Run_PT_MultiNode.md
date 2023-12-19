@@ -1,7 +1,7 @@
 ## 1. We will be using elastic_ddp.py file to run Pytorch DDP test.
 https://raw.githubusercontent.com/ozziemoreno/files/main/elastic_ddp.py
 
-## 2. Request 2 nodes, 8 GPU per node node though Slurm.
+## 2. Request 2 nodes, 8 GPUs per node though Slurm.
 ```
 salloc --exclusive --mem=0 --gres=gpu:8 -p 1CN128C8G2H_2IB_MI210_SLES15 -N 2
 ```
