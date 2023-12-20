@@ -92,7 +92,7 @@ root@smc-r07-07:/var/lib/jenkins#
 ```
 Above logs indicate that distributed training is success in a multi node environment.
 
-## 4 Notes
+## 5. Notes
 You can also run single node training to test individual node. <br>
 Just change --nnodes=1 from above commands. <br>
 ```
